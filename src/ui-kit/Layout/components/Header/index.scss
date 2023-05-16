@@ -1,0 +1,33 @@
+@import "src/ui-kit/theme";
+
+.header {
+  height: 70px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  @include media(lg) {
+    height: 60px;
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: block;
+
+    @include media(lg) {
+      width: 28px;
+    }
+  }
+
+  &__icon {
+    cursor: pointer;
+    display: none;
+
+    @include media(lg) {
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "src/ui-kit/theme";
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid $white-00;
+
+  &__link {
+    @include h4;
+    border-top: 1px solid $white-00;
+    color: $white-00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 50px;
+    padding: 0 20px;
+    background: transparent;
+    transition: 180ms ease;
+
+    &--active {
+      color: $black-00;
+      background: $white-00;
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+    }
+  }
+}

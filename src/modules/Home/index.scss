@@ -1,0 +1,44 @@
+@import "src/ui-kit/theme";
+
+.home {
+  background: $black-00;
+  color: $white-00;
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+
+  &__h1 {
+    margin-bottom: 10px;
+  }
+
+  &__h3 {
+    margin-bottom: 35px;
+  }
+
+  &__btn {
+    max-width: 250px;
+
+    @include media(sm) {
+      max-width: 100%;
+    }
+  }
+}
+
+.decor {
+  position: absolute;
+  top: 67px;
+  right: 65px;
+
+  @include media(sm) {
+    right: 41px;
+    bottom: 15px;
+    top: auto;
+  }
+}

@@ -1,0 +1,22 @@
+@import "src/ui-kit/theme";
+
+.input {
+  @include inputText;
+  height: 35px;
+  border-radius: 17.5px;
+  padding: 0 25px;
+  color: $black-00;
+  min-width: 290px;
+  border: 0;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='17' ry='17' stroke='%23666666FF' stroke-width='3' stroke-dasharray='10%2c 14' stroke-dashoffset='10' stroke-linecap='square'/%3e%3c/svg%3e");
+
+  &::placeholder {
+    @include inputText;
+    color: $neutral-10;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

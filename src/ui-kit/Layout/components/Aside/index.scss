@@ -1,0 +1,23 @@
+@import "src/ui-kit/theme";
+
+.aside {
+  background: $black-00;
+  flex: 0 0 455px;
+  margin-right: 20px;
+  transition: 180ms ease;
+
+  &__header {
+    padding: 20px 30px 25px;
+    color: $white-00;
+  }
+
+  @include media(xl) {
+    flex: 0 0 350px;
+  }
+
+  @include media(lg) {
+    display: none;
+  }
+}
+
+

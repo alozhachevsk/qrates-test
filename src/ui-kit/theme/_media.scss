@@ -1,0 +1,31 @@
+$breakpoint-xs: 321px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 769px;
+$breakpoint-lg: 1025px;
+$breakpoint-xl: 1401px;
+
+@mixin media($breakpoint) {
+  @if ($breakpoint == xs) {
+    @media (max-width: $breakpoint-xs) {
+      @content;
+    }
+  } @else if ($breakpoint == sm) {
+    @media (max-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else if ($breakpoint == md) {
+    @media (max-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if ($breakpoint == lg) {
+    @media (max-width: $breakpoint-lg) {
+      @content;
+    }
+  } @else if ($breakpoint == xl) {
+    @media (max-width: $breakpoint-xl) {
+      @content;
+    }
+  } @else {
+    @error "UNKNOWN MEDIA BREAKPOINT #{$breakpoint}";
+  }
+}

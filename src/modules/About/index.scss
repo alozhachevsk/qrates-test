@@ -1,0 +1,86 @@
+@import "src/ui-kit/theme";
+
+.about {
+  background: $black-00;
+  color: $white-00;
+  flex: 1;
+}
+
+.about-content {
+  text-align: center;
+  width: 100%;
+  max-width: 840px;
+  margin: auto;
+  padding: 0 25px 25px;
+
+  &__h1 {
+    margin-bottom: 25px;
+  }
+
+  @include media(sm) {
+    text-align: left;
+  }
+}
+
+.slider {
+  margin: 90px 0 25px;
+
+  @include media(md) {
+    padding: 0 0 0 20px;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.slider-pagination {
+  &__btn {
+    color: $white-00;
+    background: transparent;
+    border: 0;
+    font-size: 64px;
+    line-height: 75px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    margin: 0 20px;
+    font-weight: 200;
+    font-family: $font-primary;
+  }
+}
+
+.custom-swiper {
+  height: 440px;
+
+  @include media(sm) {
+    height: 236px;
+  }
+}
+
+.swiper-slide {
+  padding: 25px 0;
+  width: 56% !important;
+  transition: 220ms ease;
+
+  @include media(xl) {
+    width: 65% !important;
+  }
+
+  @include media(md) {
+    padding: 0;
+    width: 80% !important;
+  }
+}
+
+.swiper-slide-active {
+  padding: 0;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

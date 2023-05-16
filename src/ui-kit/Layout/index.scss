@@ -1,0 +1,26 @@
+@import "src/ui-kit/theme";
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  background: $white-10;
+  padding: 50px 20px 0;
+
+  @include media(sm) {
+    padding-top: 40px;
+  }
+
+  &--home {
+    flex-direction: column;
+
+    @include media(lg) {
+      padding-top: 0;
+    }
+  }
+}
